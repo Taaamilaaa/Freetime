@@ -25,7 +25,9 @@ module.exports = {
       "island-green": "#27AE60",
       "aqua-belt": "#7DC9CE",
       "pink-charge": "#DC66C2",
-      "herty-hosta": " #90C483"
+      "herty-hosta": " #90C483",
+      "festival": "#EFCE4A",
+      "question-mark-block": "#F2994A"
 
     }
   },
