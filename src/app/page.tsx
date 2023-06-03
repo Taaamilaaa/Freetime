@@ -201,9 +201,10 @@ export default function Home() {
                 <div className=" max-w-[1162px] mx-auto flex flex-row justify-between items-center">
                     <button className='w-[31px] h-[32px] bg-[url("/images/icons/double-angle-pointing-to-right.png")] '></button>
                     <ul className="grid grid-cols-3  gap-x-[62px] max-w-[1026px] mx-auto ">
-                        <li>
-                            <div className="pt-[15px] pb-[25px] px-[15px] rounded-[8px] shadow-[0px_2px_12px_rgba(0,0,0,0.15)] ">
-                                <span className=' text-elemental-grey text-[14px] leading-[16px] font-normal mb-[23px] after:content-[""] after:inline-block after:w-[10px] after:h-[10px] after:bg-[url("/images/icons/Group.svg")] after:ml-[5px]'>
+                        <li className="">
+                            <div className="pt-[15px] pb-[25px] px-[15px] rounded-[8px] shadow-[0px_2px_12px_rgba(0,0,0,0.15)] relative">
+                                <div className='bg-festival w-[30px] h-[30px] rounded-[50%] shadow-[0px_2px_10px_rgba(0,0,0,0.25)] absolute top-[7px] right-[10px] bg-[url("/images/icons/002-star.png")] bg-no-repeat bg-center'></div>
+                                <span className='block text-elemental-grey text-[14px] leading-[16px] font-normal mb-[23px] after:content-[""] after:inline-block after:w-[10px] after:h-[10px] after:bg-[url("/images/icons/Group.svg")] after:ml-[5px]'>
                                     Заявка на роботу
                                 </span>
                                 <h5 className="text-[18px] leading-[29px] mb-[19px]">
@@ -224,8 +225,9 @@ export default function Home() {
                             </div>
                         </li>
                         <li>
-                            <div className="pt-[15px] pb-[25px] px-[15px] rounded-[8px] shadow-[0px_2px_12px_rgba(0,0,0,0.15)]">
-                                <span className=' text-elemental-grey text-[14px] leading-[16px] font-normal mb-[23px] after:content-[""] after:inline-block after:w-[10px] after:h-[10px] after:bg-[url("/images/icons/Group.svg")] after:ml-[5px]'>
+                            <div className="pt-[15px] pb-[25px] px-[15px] rounded-[8px] shadow-[0px_2px_12px_rgba(0,0,0,0.15)] relative">
+                                <div className='w-[30px]  h-[30px] rounded-[50%] shadow-[0px_2px_10px_rgba(0,0,0,0.25)] absolute top-[7px] right-[10px] bg-[url("/images/icons/001-star.png")] bg-no-repeat bg-center'></div>
+                                <span className='block text-elemental-grey text-[14px] leading-[16px] font-normal mb-[23px] after:content-[""] after:inline-block after:w-[10px] after:h-[10px] after:bg-[url("/images/icons/Group.svg")] after:ml-[5px]'>
                                     Заявка на роботу
                                 </span>
                                 <h5 className="text-[18px] leading-[29px] mb-[19px]">
@@ -246,8 +248,9 @@ export default function Home() {
                             </div>
                         </li>
                         <li>
-                            <div className="pt-[15px] pb-[25px] px-[15px] rounded-[8px] shadow-[0px_2px_12px_rgba(0,0,0,0.15)]">
-                                <span className=' text-elemental-grey text-[14px] leading-[16px] font-normal mb-[23px] after:content-[""] after:inline-block after:w-[10px] after:h-[10px] after:bg-[url("/images/icons/Group.svg")] after:ml-[5px]'>
+                            <div className="pt-[15px] pb-[25px] px-[15px] rounded-[8px] shadow-[0px_2px_12px_rgba(0,0,0,0.15)] relative">
+                                <div className='w-[30px] h-[30px] rounded-[50%] shadow-[0px_2px_10px_rgba(0,0,0,0.25)] absolute top-[7px] right-[10px] bg-[url("/images/icons/001-star.png")] bg-no-repeat bg-center'></div>
+                                <span className='block text-elemental-grey text-[14px] leading-[16px] font-normal mb-[23px] after:content-[""] after:inline-block after:w-[10px] after:h-[10px] after:bg-[url("/images/icons/Group.svg")] after:ml-[5px]'>
                                     Заявка на роботу
                                 </span>
                                 <h5 className="text-[18px] leading-[29px] mb-[19px]">
@@ -277,26 +280,141 @@ export default function Home() {
                 </h3>
                 <ul className="grid grid-cols-3 max-w-[1026px] mx-auto ">
                     <li className="text-center font-bold uppercase ">
-                        <span className="flex flex-row items-center justify-center mb-[25px] text-[28px] leading-[45px] text-aqua-belt before:content-[''] before:inline-block before:w-[37px] before:h-[37px] before:bg-[url('/images/icons/001-idea.png')] before:bg-no-repeat before:bg-contin before:bg-center before:mr-[6px]">6548</span>
-                        <p className="text-[18px] leading-[29px] ">
-                            {' '}
-                            професіоналів та волонтерів
-                        </p>
+                        <span className="flex flex-row items-center justify-center mb-[25px] text-[28px] leading-[45px] text-aqua-belt before:content-[''] before:inline-block before:w-[37px] before:h-[37px] before:bg-[url('/images/icons/001-idea.png')] before:bg-no-repeat before:bg-contin before:bg-center before:mr-[6px]">
+                            6548
+                        </span>
+                        <p className="text-[18px] leading-[29px] "> професіоналів та волонтерів</p>
                     </li>
                     <li className="text-center  font-bold uppercase">
-                        <span className="flex flex-row items-center justify-center mb-[25px] text-[28px] leading-[45px] text-pink-charge before:content-[''] before:inline-block before:w-[37px] before:h-[37px] before:bg-[url('/images/icons/003-computer.png')] before:bg-no-repeat before:bg-contin before:bg-center before:mr-[6px]">4684</span>
-                        <p className="text-[18px] leading-[29px] ">
-                            {' '}
-                            вакансій та пропозицій
-                        </p>
+                        <span className="flex flex-row items-center justify-center mb-[25px] text-[28px] leading-[45px] text-pink-charge before:content-[''] before:inline-block before:w-[37px] before:h-[37px] before:bg-[url('/images/icons/003-computer.png')] before:bg-no-repeat before:bg-contin before:bg-center before:mr-[6px]">
+                            4684
+                        </span>
+                        <p className="text-[18px] leading-[29px] "> вакансій та пропозицій</p>
                     </li>
                     <li className="text-center  font-bold uppercase">
-                        <span className="flex flex-row items-center justify-center mb-[25px] text-[28px] leading-[45px] text-herty-hosta before:content-[''] before:inline-block before:w-[37px] before:h-[37px] before:bg-[url('/images/icons/004-stamp.png')] before:bg-no-repeat before:bg-contin before:bg-center before:mr-[6px]">7642</span>
-                        <p className="text-[18px] leading-[29px]  ">
-                            {' '}
-                            виконаних робіт та проектів
-                        </p>
+                        <span className="flex flex-row items-center justify-center mb-[25px] text-[28px] leading-[45px] text-herty-hosta before:content-[''] before:inline-block before:w-[37px] before:h-[37px] before:bg-[url('/images/icons/004-stamp.png')] before:bg-no-repeat before:bg-contin before:bg-center before:mr-[6px]">
+                            7642
+                        </span>
+                        <p className="text-[18px] leading-[29px]  "> виконаних робіт та проектів</p>
                     </li>
+                </ul>
+            </section>
+            <section className="pt-[37px] pb-[47px]">
+                <h3 className="text-[28px] leading-[45px]  uppercase text-center mb-[48px]">
+                    топ виконавців
+                </h3>
+                <div className=" max-w-[1162px] mx-auto flex flex-row justify-between items-center ">
+                    <button className='w-[31px] h-[32px] bg-[url("/images/icons/double-angle-pointing-to-right.png")] '></button>
+                    <ul className="grid grid-cols-3  gap-x-[62px] max-w-[1026px] mx-auto ">
+                        <li className="">
+                            <div className="p-[15px] rounded-[8px] shadow-[0px_2px_12px_rgba(0,0,0,0.15)] relative h-full flex flex-col justify-between">
+                                <div>
+                                    <div className='w-[30px] h-[30px] rounded-[50%] shadow-[0px_2px_10px_rgba(0,0,0,0.25)] absolute top-[7px] right-[10px] bg-[url("/images/icons/001-star.png")] bg-no-repeat bg-center'></div>
+                                    <span className='underline block text-elemental-grey text-[14px] leading-[16px] font-normal mb-[16px] after:content-[""] after:inline-block after:w-[10px] after:h-[10px] after:bg-[url("/images/icons/Group.svg")] after:ml-[5px]'>
+                                        Виконавці
+                                    </span>
+                                    <div className="flex flex-row items-center ">
+                                        <div className='w-[73px] h-[73px] mr-[10px] rounded-[50%] bg-[url("/images/image_1.png")] border-[1px] border-solid border-explosive-grey bg-no-repeat bg-center'></div>
+                                        <div className="font-medium text-[18px] leading-[29px]">
+                                            <p>Оксана</p>
+                                            <p>oks_teach24</p>
+                                        </div>
+                                    </div>
+                                    <h5 className="text-[18px] leading-[29px] mb-[34px]">
+                                        Няня з освітою вихователя
+                                    </h5>
+                                    <p className="text-[14px] leding-[16px] font-normal mb-[16px] ">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor{' '}
+                                    </p>
+                                </div>
+
+                                <div className="flex justify-between items-center mt-auto">
+                                    <span className="text-island-green font-bold leding-[26px] text-16px">
+                                        50 грн / год
+                                    </span>
+                                    <button className="text-[12px] text-center font-normal bg-clear-chill py-[5px] px-[20px] rounded-[30px] flex items-center justify-center text-white">
+                                        Детальніше
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li className="">
+                            <div className="p-[15px] rounded-[8px] shadow-[0px_2px_12px_rgba(0,0,0,0.15)] relative h-full flex flex-col justify-between">
+                                <div>
+                                    <div className='w-[30px] h-[30px] rounded-[50%] shadow-[0px_2px_10px_rgba(0,0,0,0.25)] absolute top-[7px] right-[10px] bg-[url("/images/icons/001-star.png")] bg-no-repeat bg-center'></div>
+                                    <span className='underline block text-elemental-grey text-[14px] leading-[16px] font-normal mb-[16px] after:content-[""] after:inline-block after:w-[10px] after:h-[10px] after:bg-[url("/images/icons/Group.svg")] after:ml-[5px]'>
+                                        Виконавці
+                                    </span>
+                                    <div className="flex flex-row items-center ">
+                                        <div className='w-[73px] h-[73px] mr-[10px] rounded-[50%] bg-[url("/images/image_2.png")] border-[1px] border-solid border-explosive-grey bg-no-repeat bg-center'></div>
+                                        <div className="font-medium text-[18px] leading-[29px]">
+                                            <p>Ігор</p>
+                                            <p>sport_one</p>
+                                        </div>
+                                    </div>
+                                    <h5 className="text-[18px] leading-[29px] mb-[34px]">
+                                        Персональний тренер з фітнесу та TRX
+                                    </h5>
+                                    <p className="text-[14px] leading-[16px] font-normal mb-[16px]">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor{' '}
+                                    </p>
+                                </div>
+
+                                <div className="flex justify-between items-center">
+                                    <span className="text-island-green font-bold leding-[26px] text-16px">
+                                        100 грн
+                                    </span>
+                                    <button className="text-[12px] text-center font-normal bg-clear-chill py-[5px] px-[20px] rounded-[30px] flex items-center justify-center text-white">
+                                        Детальніше
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li className="">
+                            <div className="p-[15px] rounded-[8px] shadow-[0px_2px_12px_rgba(0,0,0,0.15)] relative h-full flex flex-col justify-between">
+                                <div>
+                                    <div className='bg-festival w-[30px] h-[30px] rounded-[50%] shadow-[0px_2px_10px_rgba(0,0,0,0.25)] absolute top-[7px] right-[10px] bg-[url("/images/icons/002-star.png")] bg-no-repeat bg-center'></div>
+                                    <span className='underline block text-question-mark-block text-[14px] leading-[16px] font-normal mb-[16px] after:content-[""] after:inline-block after:w-[10px] after:h-[10px] after:bg-[url("/images/icons/eco-volunteer.png")] after:ml-[5px]'>
+                                        Волонтери
+                                    </span>
+                                    <div className="flex flex-row items-center ">
+                                        <div className='w-[73px] h-[73px] mr-[10px] rounded-[50%] bg-[url("/images/icons/user.png")] border-[1px] border-solid border-explosive-grey bg-no-repeat bg-center'></div>
+                                        <div className="font-medium text-[18px] leading-[29px]">
+                                            <p>Ірина</p>
+                                            <p>irka_777</p>
+                                        </div>
+                                    </div>
+                                    <h5 className="text-[18px] leading-[29px] mb-[34px]">
+                                        Хочу навчитися шити іграшки. Маю 3 години в день
+                                    </h5>
+                                    <p className="text-[14px] leding-[16px] font-normal mb-[16px]">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor
+                                    </p>
+                                </div>
+
+                                <div className="flex justify-between items-center">
+                                    <span className="text-island-green font-bold leding-[26px] text-16px">
+                                        Безкоштовно
+                                    </span>
+                                    <button className="text-[12px] text-center font-normal bg-clear-chill py-[5px] px-[20px] rounded-[30px] flex items-center justify-center text-white">
+                                        Детальніше
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button className='w-[31px] h-[32px] bg-[url("/images/icons/double-angle-pointing-to-right.png")] rotate-[180deg]'></button>
+                </div>
+            </section>
+            <section className="pt-[67px] pb-[72px] bg-white">
+                <h3 className="text-[28px] leading-[45px]  uppercase text-center mb-[32px]">
+                    Як це працює
+                </h3>
+                <ul>
+                    <li></li>
                 </ul>
             </section>
         </div>
