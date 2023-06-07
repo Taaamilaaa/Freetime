@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import Category from './components/category';
 import JobApplicationCard from './components/jobApplicationCard';
@@ -5,20 +6,29 @@ import PerformerCard from './components/performerCard';
 import Response from './components/response';
 import Input from './components/input';
 import BlogCard from './components/blogCard';
+import HeroSlider from './components/heroSlider';
+import Head from 'next/head';
 
 export default function Home() {
     return (
         <div>
-            <section className='h-fit w-full bg-[url("/images/plumber-228010_1920.jpg")] bg-cover bg-no-repeat bg-center '>
+            <Head>
+                <link rel="stylesheet" type="text/css" charSet="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> 
+                <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+            </Head>
+   
+            <section className='h-fit w-full  relative'>
+                <HeroSlider/>
+                {/* <div className='absolute w-[100%] h-[100%] bg-[url("/images/plumber-228010_1920.jpg")] bg-cover bg-no-repeat bg-center z-[-5]'></div> */}
                 <div className="lg:max-w-[1170px] mx-auto text-center">
                     <div className="items-center mb-[20px]">
                         {' '}
                         <div>
-                            <button className='w-[60px] h-[62px] bg-[url("/images/icons/main-sl-left.png")] bg-no-repeat bg-contain absolute left-[60px] top-[215px]'></button>
+                            {/* <button className='w-[60px] h-[62px] bg-[url("/images/icons/main-sl-left.png")] bg-no-repeat bg-contain absolute left-[60px] top-[215px]'></button> */}
                             <h1 className="text-[62px] leading-[100px] text-white uppercase  pt-[215px] pb-[150px]">
                                 Потрібна допомога?
                             </h1>{' '}
-                            <button className='w-[60px] h-[62px] bg-[url("/images/icons/main-sl-left.png")] bg-no-repeat bg-contain rotate-[180deg] absolute right-[60px] top-[215px]'></button>
+                            {/* <button className='w-[60px] h-[62px] bg-[url("/images/icons/main-sl-left.png")] bg-no-repeat bg-contain rotate-[180deg] absolute right-[60px] top-[215px]'></button> */}
                         </div>
                     </div>
                 </div>
