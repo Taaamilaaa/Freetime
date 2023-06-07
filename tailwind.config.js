@@ -27,7 +27,9 @@ module.exports = {
       "pink-charge": "#DC66C2",
       "herty-hosta": " #90C483",
       "festival": "#EFCE4A",
-      "question-mark-block": "#F2994A"
+      "question-mark-block": "#F2994A",
+      "black-oak": "#4F4F4F",
+      "beluga": "#F1F1F1"
 
     }
   },

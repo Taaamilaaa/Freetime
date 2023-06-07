@@ -27,3 +27,9 @@ h5,
 h6 {
     font-weight: 700;
 }
+h3 {
+    font-size: 28px;
+    line-height: 45px;
+    text-transform: uppercase;
+    text-align: center;
+}
